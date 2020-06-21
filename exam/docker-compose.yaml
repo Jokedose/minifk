@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  front:
+    image: chanwit/front
+    ports:
+      - 6060:8080
+
+  source:
+    image: chanwit/source
+    ports:
+      - 8080:8080
+
+  adder:
+    image: chanwit/adder
+    ports:
+      - 8081:8080
+
+  suber:
+    image: chanwit/suber
+    ports:
+      - 8082:8080
